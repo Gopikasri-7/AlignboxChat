@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fun Friday Group</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <img src="profile.jpg" class="group-pic" alt="Group">
+      <h2>Fun Friday Group</h2>
+    </header>
+
+    <main id="chat-box" class="chat-box"></main>
+
+    <footer class="chat-footer">
+      <div class="anonymous-info">🎭 Now you’re appearing as <b>Anonymous!</b></div>
+      <div class="input-area">
+        <input id="message-input" type="text" placeholder="Type a message...">
+        <button id="send-btn">➤</button>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

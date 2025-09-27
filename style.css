@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.chat-container {
+  width: 380px;
+  height: 700px;
+  background: #fff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.chat-header {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.group-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chat-header h2 {
+  color: #a31414;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.chat-box {
+  flex: 1;
+  background: #f7f7f7;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.message {
+  margin: 8px 0;
+  max-width: 75%;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.message .sender {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.message.you {
+  background: #ff6b35;
+  color: #fff;
+  margin-left: auto;
+  border-bottom-right-radius: 2px;
+  text-align: left;
+}
+
+.message.other {
+  background: #e9e9e9;
+  color: #000;
+  margin-right: auto;
+  border-bottom-left-radius: 2px;
+}
+
+.timestamp {
+  display: block;
+  font-size: 11px;
+  color: gray;
+  margin-top: 4px;
+  text-align: right;
+}
+
+.message.you .timestamp::after {
+  content: " ✓✓";
+  color: #fff;
+  font-size: 11px;
+  margin-left: 4px;
+}
+
+.chat-footer {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+
+.anonymous-info {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+}
+
+#message-input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+#send-btn {
+  background: #a31414;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
